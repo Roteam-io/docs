@@ -19,16 +19,23 @@
           {
             "group": "Getting started",
             "pages": [
-              "index"
+              "index-copied-1"
             ]
           }
+        ]
+      },
+      {
+        "tab": "API Documentation",
+        "icon": "arrow-left-to-bracket",
+        "pages": [
+          "api"
         ]
       }
     ]
   },
   "logo": {
-    "light": "/images/RoteamLogo(1).png",
-    "dark": "/images/RoteamLogoLight(1).png"
+    "light": "/logo/Long Roteam Dark Light SVG 500x200px.svg",
+    "dark": "/logo/Long Roteam Dark SVG 500x200px.svg"
   },
   "navbar": {
     "links": [
