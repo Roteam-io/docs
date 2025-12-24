@@ -27,8 +27,8 @@
     ]
   },
   "logo": {
-    "light": "/Roteam Logo Dark (1).svg",
-    "dark": "/Roteam Logo Light (1).svg"
+    "light": "/images/RoteamLogo(1).png",
+    "dark": "/images/RoteamLogoLight(1).png"
   },
   "navbar": {
     "links": [
