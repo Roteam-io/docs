@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "willow",
   "name": "Roteam.io",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#995bf5",
+    "light": "#995bf5",
+    "dark": "#995bf5"
   },
   "favicon": {
     "light": "/Roteam Logo Light (1).svg",
@@ -68,13 +68,13 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/light.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Login",
+        "href": "https://auth.roteam.io"
       }
     ],
     "primary": {
@@ -102,5 +102,11 @@
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   },
-  "description": "The new generation of Roblox Community Management"
+  "description": "The new generation of Roblox Community Management",
+  "background": {
+    "decoration": "grid"
+  },
+  "appearance": {
+    "default": "dark"
+  }
 }
