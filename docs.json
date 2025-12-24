@@ -26,9 +26,13 @@
       },
       {
         "tab": "API Documentation",
-        "icon": "arrow-left-to-bracket",
-        "pages": [
-          "api"
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "api"
+            ]
+          }
         ]
       }
     ]
