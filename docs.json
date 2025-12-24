@@ -38,8 +38,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/Long Roteam Dark Light SVG 500x200px.svg",
-    "dark": "/logo/Long Roteam Dark SVG 500x200px.svg"
+    "light": "/logo/Long Roteam Dark SVG 500x200px.svg",
+    "dark": "/logo/Long Roteam Dark Light SVG 500x200px.svg"
   },
   "navbar": {
     "links": [
