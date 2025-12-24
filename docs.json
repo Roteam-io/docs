@@ -19,7 +19,7 @@
           {
             "group": "Getting started",
             "pages": [
-              "index-copied-1"
+              "introduction"
             ]
           }
         ]
@@ -30,7 +30,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "api"
+              "introduction-api"
             ]
           }
         ]
