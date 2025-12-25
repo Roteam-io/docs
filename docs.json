@@ -51,7 +51,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.roteam.io"
     }
   },
   "contextual": {
@@ -78,5 +78,10 @@
   },
   "appearance": {
     "default": "dark"
+  },
+  "integrations": {
+    "telemetry": {
+      "enabled": true
+    }
   }
 }
