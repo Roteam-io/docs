@@ -1,0 +1,73 @@
+---
+title: "Org Chart"
+description: "Visualize your team's hierarchy and reporting structure."
+icon: "sitemap"
+---
+
+The Org Chart displays your workspace's organizational hierarchy as an interactive visual tree. See how roles relate to each other and who reports to whom.
+
+## Viewing the Org Chart
+
+Navigate to **Org Chart** from the sidebar to see the visual hierarchy of your workspace.
+
+<Frame>
+  <img src="/images/org-chart-overview.png" alt="Org chart visualization" />
+</Frame>
+
+### Navigation
+
+- **Pan** — Click and drag to move around the chart
+- **Zoom** — Scroll to zoom in and out
+- **Search** — Use the search bar to find a specific role or member. The chart will auto-pan to the first match.
+
+### What's Displayed
+
+Each node in the chart represents a tracked role and shows:
+- Role name
+- Up to 5 members (sorted alphabetically)
+- A "+X more" indicator if the role has more than 5 members
+
+Clicking on a member navigates to their profile in the [Directory](/using-roteam/directory).
+
+## Configuring the Org Chart
+
+Set up your org chart's reporting relationships in **Settings > Org Chart**.
+
+### Setting Up Reporting Relationships
+
+<Steps>
+  <Step title="Open Org Chart settings">
+    Go to **Settings > Org Chart**.
+  </Step>
+  <Step title="Add a reporting rule">
+    Click **Add Rule** to define a parent-child relationship between roles. For example, "Junior Staff" reports to "Senior Staff".
+  </Step>
+  <Step title="Choose the relationship type">
+    Select the reports-to type:
+    - **Role-to-Role** — An entire role reports to another role (e.g., all Moderators report to Senior Moderators)
+    - **Individual-to-User** — A specific member reports to a specific person
+  </Step>
+  <Step title="Save">
+    Click **Save** to update the chart. Changes are reflected immediately.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/org-chart-settings.png" alt="Org chart settings" />
+</Frame>
+
+### Tracked Roles
+
+Only roles marked as **tracked** appear in the org chart. To manage tracked roles:
+
+1. Go to **Settings > Members & Roles**
+2. Toggle roles on or off under **Tracked Roles**
+3. Untracked roles are hidden from the org chart, leaderboard, and activity tracking
+
+<Tip>
+  Start by setting up your top-level roles first, then work downward. This makes it easier to visualize the hierarchy as you build it.
+</Tip>
+
+<Note>
+  The org chart updates automatically when members change roles in your Roblox group. After a group sync, new members will appear in their respective roles.
+</Note>

@@ -1,0 +1,123 @@
+---
+title: "Advancement"
+description: "Manage promotions, recommendations, and automatic rank progression."
+icon: "arrow-up"
+---
+
+Advancement covers everything related to rank progression in your workspace — from crowdsourced promotion recommendations to fully automated ranking based on activity metrics.
+
+## Promotion Recommendations
+
+Any member with the right permissions can recommend someone for a promotion.
+
+<Steps>
+  <Step title="Submit a recommendation">
+    Navigate to the member's profile in the [Directory](/using-roteam/directory) or the Advancement page. Click **Recommend for Promotion**.
+  </Step>
+  <Step title="Provide details">
+    - **Member** — Who you're recommending
+    - **Reason** — Why they deserve a promotion
+    - **Rating** — Your confidence level in the recommendation
+  </Step>
+  <Step title="Submit">
+    Click **Submit**. The recommendation will appear in the recommendations queue for managers to review.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/advancement-recommend.png" alt="Promotion recommendation form" />
+</Frame>
+
+### Browsing Recommendations
+
+The Advancement page shows recommendations organized by:
+- **Top** — Most recommended members
+- **Trending** — Members gaining recommendations recently
+- **New** — Latest recommendations
+
+<Frame>
+  <img src="/images/advancement-recommendations.png" alt="Recommendations list" />
+</Frame>
+
+## Reviewing and Approving Promotions
+
+Managers and users with approval permissions can review recommendations and process promotions.
+
+<Steps>
+  <Step title="Review recommendations">
+    Open the Advancement page and browse pending recommendations.
+  </Step>
+  <Step title="Approve or deny">
+    Click on a recommendation to review the details. Choose to **Approve** (promote the member) or **Deny** the recommendation.
+  </Step>
+  <Step title="Confirm rank change">
+    If approved, confirm the new rank. If Auto Ranking is enabled, the rank change will be synced to your Roblox group automatically.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/advancement-approve.png" alt="Promotion approval dialog" />
+</Frame>
+
+<Warning>
+  If Auto Ranking is not enabled, you will need to manually update the member's rank in your Roblox group after approving a promotion.
+</Warning>
+
+## Promotion History
+
+View a complete log of all promotions and demotions in the **History** tab. Each entry shows:
+- Member promoted/demoted
+- Previous rank and new rank
+- Who approved the change
+- Date and time
+
+## Auto Ranking
+
+Auto Ranking automates rank changes based on configurable criteria. Members are automatically promoted or demoted when they meet (or no longer meet) the defined thresholds.
+
+### Setting Up Auto Ranking
+
+<Steps>
+  <Step title="Navigate to settings">
+    Go to **Settings > Advancement** or find Auto Ranking in the Advancement section.
+  </Step>
+  <Step title="Enable Auto Ranking">
+    Toggle the **Auto Ranking** switch on.
+  </Step>
+  <Step title="Add your Roblox API key">
+    Enter your Roblox Open Cloud API key. This is required for Roteam to update ranks in your Roblox group.
+
+    To get an API key:
+    1. Visit the [Roblox Creator Dashboard](https://create.roblox.com/credentials)
+    2. Create a new API key with **Group** permissions
+    3. Grant **Read** and **Write** access to your group's membership
+  </Step>
+  <Step title="Configure rank conditions">
+    For each rank, define the promotion criteria:
+    - **Activity Minutes** — Minimum total minutes in-game
+    - **Session Count** — Minimum number of sessions attended/hosted
+    - **Days Since Last Promotion** — Cooldown period between promotions
+
+    Example:
+    | From Rank | To Rank | Minutes Required | Sessions Required | Cooldown |
+    |-----------|---------|-----------------|-------------------|----------|
+    | Trainee | Junior Staff | 500 | 10 | 7 days |
+    | Junior Staff | Staff | 2,000 | 30 | 14 days |
+    | Staff | Senior Staff | 5,000 | 75 | 30 days |
+  </Step>
+  <Step title="Save and verify">
+    Save your configuration. Use the **Test** button to verify your API key is working and rank changes can be processed.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/advancement-auto-ranking.png" alt="Auto ranking configuration" />
+</Frame>
+
+<Tip>
+  Start with conservative thresholds and adjust over time. You can always lower requirements, but demoting members who were auto-promoted too quickly can cause friction.
+</Tip>
+
+<Note>
+  Auto Ranking runs on a periodic schedule. There may be a short delay between a member meeting the criteria and their rank being updated.
+</Note>

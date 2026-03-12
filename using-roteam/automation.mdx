@@ -1,0 +1,134 @@
+---
+title: "Automation"
+description: "Build visual workflows to automate repetitive tasks in your workspace."
+icon: "wand-magic-sparkles"
+---
+
+Automation lets you create workflows that run automatically based on triggers and conditions. Use the visual workflow builder to automate repetitive tasks without writing code.
+
+## Viewing Automations
+
+Navigate to **Automation** from the sidebar to see all your workflows. Each automation card shows:
+- Automation name
+- Status badge (**Draft** or **Published**)
+- Whether it's currently enabled or disabled
+
+<Frame>
+  <img src="/images/automation-overview.png" alt="Automations list" />
+</Frame>
+
+## Creating an Automation
+
+<Steps>
+  <Step title="Click Create Automation">
+    Click the **Create Automation** button.
+  </Step>
+  <Step title="Name your automation">
+    Give your automation a descriptive name (e.g., "Welcome New Members", "Auto-Assign Training", "Activity Alert").
+  </Step>
+  <Step title="Open the workflow editor">
+    The visual editor opens with a canvas where you build your workflow using nodes.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/automation-create.png" alt="Create automation dialog" />
+</Frame>
+
+## Building a Workflow
+
+The workflow editor uses a node-based interface. Connect nodes together to define your automation logic.
+
+### Node Types
+
+<AccordionGroup>
+  <Accordion title="Triggers">
+    Triggers define **when** your automation runs. Every workflow starts with a trigger.
+
+    - **Time-based** — Run on a schedule (daily, weekly, etc.)
+    - **User Action** — Run when a specific action occurs (member joins, promotion happens, application submitted, etc.)
+    - **Condition Met** — Run when data meets a threshold (e.g., activity exceeds X minutes)
+  </Accordion>
+
+  <Accordion title="Conditions">
+    Conditions add **logic** to your workflow. Only proceed if certain criteria are met.
+
+    - Check member role or rank
+    - Compare activity values
+    - Evaluate dates or time ranges
+    - Check permission group membership
+  </Accordion>
+
+  <Accordion title="Actions">
+    Actions define **what happens** when the trigger fires and conditions are met.
+
+    - Send a notification
+    - Assign a course
+    - Update a member's permission group
+    - Create an announcement
+    - Log an entry
+  </Accordion>
+</AccordionGroup>
+
+### Connecting Nodes
+
+1. Drag a node from the toolbar onto the canvas
+2. Connect nodes by dragging from one node's output to another's input
+3. Configure each node by clicking on it and filling in the settings
+
+<Frame>
+  <img src="/images/automation-editor.png" alt="Visual workflow editor" />
+</Frame>
+
+## Publishing an Automation
+
+Automations have two statuses:
+
+- **Draft** — The workflow is being built. It will not run.
+- **Published** — The workflow is live and will execute when triggered.
+
+To publish:
+1. Open the automation
+2. Click **Publish**
+3. The automation will start running based on its trigger
+
+## Enabling and Disabling
+
+You can temporarily disable a published automation without deleting it:
+
+1. Find the automation in the list
+2. Toggle the **Enabled/Disabled** switch
+3. Disabled automations retain their configuration but don't execute
+
+<Tip>
+  Start with simple automations and add complexity over time. A basic "welcome new member" workflow is a great first automation.
+</Tip>
+
+## Example Workflows
+
+### Welcome New Members
+- **Trigger**: New member joins workspace
+- **Action**: Send welcome message, assign onboarding course
+
+### Activity Milestone Alert
+- **Trigger**: Member reaches 1,000 activity minutes
+- **Condition**: Member is in a tracked role
+- **Action**: Notify managers, add to promotion consideration list
+
+### Weekly Activity Report
+- **Trigger**: Every Monday at 9:00 AM
+- **Action**: Generate activity summary, post as announcement
+
+## Managing Automations
+
+- **Edit** — Click on any automation to modify its workflow
+- **Delete** — Remove an automation permanently
+- **Duplicate** — Copy an existing automation as a starting point for a new one
+
+<Warning>
+  Be careful when publishing automations that take actions on users (e.g., assigning roles or sending notifications). Test with a draft first and verify the trigger conditions are correct.
+</Warning>
+
+<Note>
+  The number and complexity of automations available may depend on your workspace plan. Check your [pricing tier](https://roteam.io) for details.
+</Note>

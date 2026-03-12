@@ -1,0 +1,113 @@
+---
+title: "Activity Tracking"
+description: "Monitor member activity with heatmaps, charts, and detailed session data."
+icon: "chart-line"
+---
+
+Activity Tracking gives you deep visibility into how your members engage with your Roblox experience. Track time spent in-game, AFK behavior, chat activity, and more.
+
+## Overview
+
+Navigate to **Activity** from the sidebar to view activity data. By default, you'll see your own activity. Users with the appropriate permissions can search for and view any member's activity.
+
+<Frame>
+  <img src="/images/activity-overview.png" alt="Activity tracking overview" />
+</Frame>
+
+## Key Metrics
+
+At the top of the activity page, you'll see summary statistics:
+
+| Metric | Description |
+|--------|-------------|
+| **Total Minutes** | Total time spent in-game over the selected period |
+| **Active Days** | Number of unique days with recorded activity |
+| **Average Per Day** | Average minutes per active day |
+| **AFK %** | Percentage of total time spent AFK (away from keyboard) |
+
+## Activity Heatmap
+
+The heatmap provides a 365-day calendar view of activity. Each cell represents a day, with darker colors indicating more activity.
+
+<Frame>
+  <img src="/images/activity-heatmap.png" alt="365-day activity heatmap" />
+</Frame>
+
+Hover over any day to see the exact minutes recorded.
+
+## Weekly Breakdown
+
+The weekly bar chart shows activity for the last 7 days. Each bar represents one day with the total minutes recorded.
+
+<Frame>
+  <img src="/images/activity-weekly.png" alt="Weekly activity chart" />
+</Frame>
+
+## Monthly Breakdown
+
+The monthly view aggregates the last 30 days into periods, giving you a broader view of activity trends over time.
+
+<Frame>
+  <img src="/images/activity-monthly.png" alt="Monthly activity chart" />
+</Frame>
+
+## Activity List
+
+Below the charts, a detailed list shows individual activity sessions:
+- **Date** — When the session occurred
+- **Duration** — Total minutes in-game
+- **AFK Time** — Minutes spent AFK during the session
+- **Chat Messages** — Number of messages sent during the session
+
+## Session History
+
+The session tab shows training events and sessions where the member had a role (host, co-host, or assigned role). This connects activity tracking with [Sessions & Events](/using-roteam/sessions-and-events).
+
+## Game Tracking Setup
+
+To collect activity data, you need to install the Roteam tracking module in your Roblox experience.
+
+<Steps>
+  <Step title="Get the tracking script">
+    Go to **Settings > Game Tracking** in your dashboard. Copy the provided script or download the module.
+  </Step>
+  <Step title="Add to your game">
+    In Roblox Studio, add the tracking module to your experience's **ServerScriptService**.
+  </Step>
+  <Step title="Configure the module">
+    Enter your workspace's API key in the module configuration. You can find your API key in **Settings > API Keys**.
+  </Step>
+  <Step title="Publish and test">
+    Publish your game and join it. After a few minutes, check the Activity page to verify data is being recorded.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/activity-game-tracking.png" alt="Game tracking setup" />
+</Frame>
+
+### What Gets Tracked
+
+The game tracking module records:
+- **Join/Leave times** — When a member enters and exits the game
+- **AFK detection** — Periods of inactivity are flagged as AFK
+- **Chat messages** — Count of messages sent in-game
+- **Session minutes** — Total active time per visit
+
+Data is aggregated into daily rollups for efficient querying and display.
+
+## Viewing Other Members
+
+If you have the **View Activity** permission:
+
+1. Use the search bar at the top of the Activity page
+2. Search by name or Roblox username
+3. Select a member to view their activity data
+
+<Tip>
+  Combine activity tracking with [Auto Ranking](/using-roteam/advancement) to automatically promote members who meet activity thresholds.
+</Tip>
+
+<Warning>
+  Activity data depends on the game tracking module being properly installed. If you're not seeing data, verify the module is in your game and your API key is correct.
+</Warning>
