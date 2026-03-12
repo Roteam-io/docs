@@ -1,0 +1,216 @@
+---
+title: "Quickstart"
+description: "Get your Roteam.io workspace up and running in minutes."
+icon: "rocket"
+---
+
+Welcome to Roteam.io — the all-in-one community management platform for Roblox. This guide walks you through creating your workspace, connecting your Roblox group, and configuring essential features.
+
+## Create Your Account
+
+To get started, you need a Roteam.io account.
+
+<Steps>
+  <Step title="Sign up">
+    Head to [auth.roteam.io](https://auth.roteam.io) and click **Sign Up**. You can register with your email or sign in with Discord.
+  </Step>
+  <Step title="Verify your email">
+    Check your inbox for a verification email and click the confirmation link.
+  </Step>
+  <Step title="Log in">
+    Once verified, log in at [auth.roteam.io](https://auth.roteam.io) to access your dashboard.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/quickstart-signup.png" alt="Sign up page" />
+</Frame>
+
+## Create a Workspace
+
+A workspace is your team's home on Roteam.io. Each workspace connects to one Roblox group.
+
+<Steps>
+  <Step title="Start workspace creation">
+    From your dashboard, click **Create Workspace**.
+  </Step>
+  <Step title="Name your workspace">
+    Enter a name for your workspace. This is how your team will identify it.
+  </Step>
+  <Step title="Connect your Roblox group">
+    Click **Connect Roblox Group** and authenticate with your Roblox account. Select the group you want to manage. You must be the owner or have admin permissions in the group.
+  </Step>
+  <Step title="Sync members">
+    Once connected, Roteam.io will automatically sync your group members. This may take a moment depending on the size of your group.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/quickstart-create-workspace.png" alt="Create workspace dialog" />
+</Frame>
+
+<Tip>
+  Member data is synced periodically from your Roblox group. You can trigger a manual sync from **Settings > Workspace Info** at any time.
+</Tip>
+
+## Set Up Permissions
+
+Before configuring features, set up permission groups so the right people have access to the right tools.
+
+<Steps>
+  <Step title="Open Settings">
+    Navigate to **Settings** from the sidebar, then select the **Members & Roles** tab.
+  </Step>
+  <Step title="Create permission groups">
+    Click **Create Permission Group** and give it a name (e.g., "Moderators", "HR Team", "Managers").
+  </Step>
+  <Step title="Assign permissions">
+    For each group, toggle the permissions you want to grant. Permissions are organized by feature — Announcements, Activity, Leaderboard, Courses, Knowledgebase, Applications, Discipline, and more.
+
+    Common permission types include:
+    - **View** — See the feature and its data
+    - **Create** — Add new records (announcements, strikes, etc.)
+    - **Edit** — Modify existing records
+    - **Delete** — Remove records
+    - **Manage** — Full control including settings
+    - **Approve** — Approve requests (promotions, time off, etc.)
+  </Step>
+  <Step title="Add members to groups">
+    Assign users to permission groups. A user can belong to multiple groups. The workspace owner (rank 255) automatically has all permissions.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/quickstart-permissions.png" alt="Permission groups settings" />
+</Frame>
+
+<Note>
+  Permission changes take effect immediately. Review your groups carefully before granting **Manage** or **Delete** permissions.
+</Note>
+
+## Configure Activity Tracking
+
+Activity Tracking records time your members spend in-game, including AFK detection and chat message counts.
+
+<Steps>
+  <Step title="Set up tracked roles">
+    Go to **Settings > Members & Roles** and mark which Roblox roles should be tracked. Only members in tracked roles will appear on leaderboards and have their activity recorded.
+  </Step>
+  <Step title="Install the game tracking script">
+    To collect in-game data, you need to add the Roteam tracking module to your Roblox experience. Go to **Settings > Game Tracking** and follow the installation instructions to add the script to your game.
+  </Step>
+  <Step title="Verify tracking">
+    After installing the script, join your game and spend a few minutes in-game. Then check the **Activity** page in your dashboard — you should see your session appear.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/quickstart-activity-tracking.png" alt="Activity tracking setup" />
+</Frame>
+
+<Tip>
+  Activity data includes total minutes, AFK minutes, and chat messages. The heatmap on each member's activity page shows the last 365 days of activity at a glance.
+</Tip>
+
+## Set Up Auto Ranking
+
+Auto Ranking automatically promotes or demotes members in your Roblox group based on their activity and performance.
+
+<Steps>
+  <Step title="Navigate to Advancement settings">
+    Go to **Settings > Advancement** or find the Auto Ranking configuration in the **Advancement** section.
+  </Step>
+  <Step title="Enable Auto Ranking">
+    Toggle **Auto Ranking** on.
+  </Step>
+  <Step title="Connect your Roblox API key">
+    Enter your Roblox Open Cloud API key. This allows Roteam.io to update ranks in your Roblox group automatically.
+  </Step>
+  <Step title="Define rank conditions">
+    For each rank, set the criteria for promotion. For example:
+    - **Trainee → Junior Staff**: 500+ activity minutes and 10+ sessions attended
+    - **Junior Staff → Staff**: 2,000+ minutes and 30+ sessions
+
+    You can use activity minutes, session counts, and other metrics as conditions.
+  </Step>
+  <Step title="Set cooldowns">
+    Optionally configure a minimum number of days between promotions to prevent rapid rank changes.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/quickstart-auto-ranking.png" alt="Auto ranking configuration" />
+</Frame>
+
+<Warning>
+  Make sure your Roblox API key has the correct permissions to manage group members. Without proper permissions, rank changes will fail silently.
+</Warning>
+
+## Create Sessions & Events
+
+Sessions let you schedule training events, meetings, and activities for your team.
+
+<Steps>
+  <Step title="Open Sessions">
+    Navigate to **Sessions & Events** from the sidebar.
+  </Step>
+  <Step title="Create an event">
+    Click **Create Event** and fill in:
+    - **Title** — Name of the session (e.g., "Weekly Training")
+    - **Date & Time** — When the event takes place
+    - **Type** — Training, meeting, interview, etc.
+    - **Roblox Game** — Link to the game where the event will happen
+  </Step>
+  <Step title="Assign roles">
+    Assign a **Host** and optionally a **Co-host**. You can also create custom session roles for participants (e.g., "Trainer", "Supervisor").
+  </Step>
+  <Step title="Set up recurring events">
+    For regular sessions, enable **Recurring** and choose the frequency — daily, weekly, biweekly, monthly, or weekdays. Set an optional end date.
+  </Step>
+  <Step title="Configure server settings">
+    Set server lock and unlock windows to control when members can join the game server for the event.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/quickstart-sessions.png" alt="Create session dialog" />
+</Frame>
+
+## Configure Time Off
+
+Set up leave management so members can request time off and managers can approve or deny requests.
+
+<Steps>
+  <Step title="Define leave types">
+    Go to **Settings** and configure your leave types (e.g., Vacation, Sick Leave, Personal Leave, LOA).
+  </Step>
+  <Step title="Set up approvers">
+    Configure which permission groups or users can approve time-off requests.
+  </Step>
+  <Step title="Test the workflow">
+    Submit a test time-off request to verify the approval workflow is working correctly. Navigate to **Time Off**, click **Request Time Off**, select a leave type, date range, and reason, then submit.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/quickstart-time-off.png" alt="Time off request form" />
+</Frame>
+
+## Next Steps
+
+You're all set with the essentials! Here's what to explore next:
+
+<CardGroup cols={2}>
+  <Card title="Announcements" icon="bullhorn" href="/using-roteam/announcements">
+    Post updates and news to your team.
+  </Card>
+  <Card title="Knowledgebase" icon="book" href="/using-roteam/knowledgebase">
+    Create handbooks, policies, and training guides.
+  </Card>
+  <Card title="Courses" icon="graduation-cap" href="/using-roteam/courses">
+    Build training courses with certifications.
+  </Card>
+  <Card title="Hiring" icon="user-plus" href="/using-roteam/hiring">
+    Set up application forms for recruitment.
+  </Card>
+</CardGroup>

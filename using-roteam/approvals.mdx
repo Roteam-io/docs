@@ -1,0 +1,86 @@
+---
+title: "Approvals"
+description: "Route requests through approval workflows with full audit trails."
+icon: "check-double"
+---
+
+Approvals provide a structured way to route requests through your organization. Whether it's a promotion, time-off request, or any other action that needs sign-off, the approval system ensures the right people review and authorize each request.
+
+## How Approvals Work
+
+When a member submits a request that requires approval (such as a promotion recommendation or time-off request), it enters the approval queue. Designated approvers are notified and can approve or deny the request.
+
+<Frame>
+  <img src="/images/approvals-overview.png" alt="Approvals queue" />
+</Frame>
+
+## Approval Queue
+
+Navigate to **Approvals** from the sidebar to see all pending items that need your attention.
+
+Each item in the queue shows:
+- **Type** — What kind of request it is (promotion, time off, etc.)
+- **Submitted by** — Who made the request
+- **Date** — When it was submitted
+- **Status** — Pending, Approved, or Rejected
+
+## Reviewing a Request
+
+<Steps>
+  <Step title="Open the request">
+    Click on any pending item in the approval queue to see the full details.
+  </Step>
+  <Step title="Review the information">
+    Read through the request details, supporting information, and any notes from the requester.
+  </Step>
+  <Step title="Approve or Reject">
+    - **Approve** — Click **Approve** to authorize the request. The associated action will be carried out.
+    - **Reject** — Click **Reject** and optionally add a note explaining why. The requester will be notified.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/approvals-review.png" alt="Approval review dialog" />
+</Frame>
+
+## Multi-Level Approvals
+
+Some requests may require multiple levels of approval. In these cases:
+
+1. The first approver reviews and approves
+2. The request moves to the next level
+3. Each level must approve before the action is finalized
+
+If any level rejects the request, the entire request is denied.
+
+## Approval History
+
+View past approvals to see:
+- What was approved or rejected
+- Who made the decision
+- When the decision was made
+- Any notes or comments added during review
+
+This creates a complete audit trail for accountability and compliance.
+
+<Frame>
+  <img src="/images/approvals-history.png" alt="Approval history" />
+</Frame>
+
+## Features That Use Approvals
+
+Approvals integrate with several other features:
+
+| Feature | What Gets Approved |
+|---------|-------------------|
+| [Advancement](/using-roteam/advancement) | Promotion recommendations |
+| [Time Off](/using-roteam/time-off) | Leave requests |
+| [Hiring](/using-roteam/hiring) | Application review stages |
+
+<Tip>
+  Check your approval queue regularly to avoid blocking team members waiting on decisions.
+</Tip>
+
+<Note>
+  Only users with **Approve** permissions for the relevant feature can review and act on approval requests. Configure these in [Permissions](/getting-started/quickstart#set-up-permissions).
+</Note>

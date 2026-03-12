@@ -17,8 +17,33 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
-            "pages": []
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/quickstart"
+            ]
+          },
+          {
+            "group": "Using Roteam.io",
+            "pages": [
+              "using-roteam/announcements",
+              "using-roteam/logbook",
+              "using-roteam/directory",
+              "using-roteam/org-chart",
+              "using-roteam/leaderboard",
+              "using-roteam/activity-tracking",
+              "using-roteam/sessions-and-events",
+              "using-roteam/courses",
+              "using-roteam/advancement",
+              "using-roteam/discipline",
+              "using-roteam/hiring",
+              "using-roteam/approvals",
+              "using-roteam/time-off",
+              "using-roteam/knowledgebase",
+              "using-roteam/sites",
+              "using-roteam/admin",
+              "using-roteam/automation",
+              "using-roteam/reports"
+            ]
           }
         ]
       },
